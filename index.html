@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        .center{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+       
+
+    </style>
+
+</head>
+<body class="bg-dark">
+    <div class="center">
+        <button class="btn-lg btn-outline-primary" onclick="random()">Pick</button>
+        <h6 class="mt-2 text-light" align="center" id="restaurant">restaurant</h6>
+    </div>
+
+    
+    <script>
+        function random() {
+            var x = Math.random() * 10;
+            if(x > 1 && x < 2)
+                document.getElementById('restaurant').innerHTML = "AL-Baik";
+            else if (x > 2 && x < 3)
+                document.getElementById('restaurant').innerHTML = "Mac";
+            else if (x > 3 && x < 4)
+                document.getElementById('restaurant').innerHTML = "Wister";
+            else if (x > 4 && x < 5)
+                document.getElementById('restaurant').innerHTML = "AL-Tazij";
+            else if (x > 5 && x < 6)
+                document.getElementById('restaurant').innerHTML = "Shawarmer";
+            else if (x > 6 && x < 7)
+                document.getElementById('restaurant').innerHTML = "Burger King";
+            else if (x > 7 && x < 8)
+                document.getElementById('restaurant').innerHTML = "Hardees";
+            else if (x > 8 && x < 9)
+                document.getElementById('restaurant').innerHTML = "Domino's";
+            else if (x > 9)
+                document.getElementById('restaurant').innerHTML = "Jan Burger";
+            }
+
+        
+        
+
+    </script>
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
